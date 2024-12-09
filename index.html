@@ -1,0 +1,66 @@
+<!-- newgame.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpaceMissiles</title>
+  
+  <script src="game.html"></script> <!-- Votre fichier JavaScript de jeu -->
+  <script src="sketch.js"></script> <!-- Votre fichier JavaScript de jeu -->
+
+
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #000000;
+      color: white;
+      padding: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 20px;
+      background-color: #b700e5;
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #4f4b00;
+      color: rgb(255, 255, 255);
+
+    }
+  </style>
+</head>
+
+
+<body>
+<img src="assets/leader/diddy.png" alt="" width="40">
+ <br><br>   
+  <h1>Comment jouer</h1>
+
+  <h4>
+    
+    Instructions :
+    <br><br><br>
+    Ce jeu repose sur des algorithmes de navigation et d’évitement. <br><br><br>
+    Les missiles suivent un objectif tout en évitant des obstacles grâce à des comportements de steering et des simulations physiques.<br><br><br>
+     Il combine détection de collision et trajectoires fluides pour une dynamique réaliste.: <br><br><br>
+    
+    SPACE: Change Target<br><br>
+    R: Reset Mode<br><br>
+    M: Change Mode 🎉</h4><br><br>
+  
+  <button onclick="startGame()">Start Game</button>
+
+  <script>
+    function startGame() {
+      // Rediriger vers la page du jeu (ex : sketch.html)
+      window.location.href = 'game.html' ;
+    }
+  </script>
+
+</body>
+</html>
